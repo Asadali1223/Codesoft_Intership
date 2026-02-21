@@ -1,0 +1,153 @@
+body body bodybody body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.calculator {
+    width: 350px;
+    max-width: 95%;
+}
+
+.display {
+    color: white;
+    font-size: 60px;
+    text-align: right;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+/* Smooth button animation */
+button:active {
+    transform: scale(0.92);
+    opacity: 0.7;
+}
+
+.orange {
+    background: #ff9500;
+}
+
+.orange.active {
+    background: white;
+    color: #ff9500;
+}
+
+.gray {
+    background: #a5a5a5;
+    color: black;
+}
+
+.zero {
+    grid-column: span 2;
+    border-radius: 35px;
+    text-align: left;
+    padding-left: 28px;
+}
+
+/* Scientific mode */
+.scientific {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.scientific button {
+    background: #1c1c1c;
+    height: 50px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .display {
+        font-size: 45px;
+    }
+    button {
+        height: 60px;
+        font-size: 18px;
+    }
+}
+/* ===== EXTRA PREMIUM STYLING ===== */
+
+/* Calculator glass effect */
+.calculator {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 18px;
+    border-radius: 28px;
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.6),
+        inset 0 0 0 1px rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+}
+
+/* Display glow */
+.display {
+    text-shadow: 0 0 15px rgba(255,255,255,0.25);
+    animation: pop 0.15s ease-in-out;
+}
+
+/* Operator glow */
+.orange {
+    box-shadow: 0 0 12px rgba(255,149,0,0.6);
+}
+
+.orange.active {
+    box-shadow: 0 0 18px rgba(255,149,0,0.9);
+}
+
+/* Button depth */
+button {
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.4);
+}
+
+button:active {
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.6);
+}
+
+/* Scientific section polish */
+.scientific {
+    background: rgba(255,255,255,0.03);
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.scientific button {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+}
+
+/* Button hover (desktop users) */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Small animation */
+@keyframes pop {
+    from {
+        transform: scale(1.02);
+    }
+    to {
+        transform: scale(1);
+    }
+}
