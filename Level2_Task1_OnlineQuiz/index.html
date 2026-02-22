@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Online Quiz</h1>
+            <p>Test your web development knowledge</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <h2 id="question"></h2>
+            <p id="timer">Time Left: 15s</p>
+
+            <div class="options">
+                <button onclick="selectAnswer(0)"></button>
+                <button onclick="selectAnswer(1)"></button>
+                <button onclick="selectAnswer(2)"></button>
+                <button onclick="selectAnswer(3)"></button>
+            </div>
+
+            <p id="progress"></p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2>Quiz Completed 🎉</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
