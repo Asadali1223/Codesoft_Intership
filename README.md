@@ -11,7 +11,7 @@ The internship is divided into multiple levels focusing on progressive learning:
 - **Level 1:** Web Development Fundamentals
 - **Level 2:** Advanced JavaScript-Based Web Applications
 
-All projects are developed with original code and follow CodSoft guidelines.
+All projects in this repository are developed using original code and follow CodSoft guidelines.
 
 ---
 
@@ -19,48 +19,38 @@ All projects are developed with original code and follow CodSoft guidelines.
 
 ### 🔹 Task 1: Personal Portfolio Website
 - Developed using **HTML and CSS**
-- Responsive and modern layout
-- Includes About, Skills, Projects, Resume, and Contact sections
-- Focus on clean UI and structured content
-
----
+- Responsive layout with About, Skills, Projects, Resume, and Contact sections
 
 ### 🔹 Task 2: Landing Page
 - Built using **HTML and CSS**
-- Structured layout with Hero, Features, About, and Call-to-Action sections
+- Hero section, features, and call-to-action layout
 - Smooth scrolling navigation
-- Focus on spacing, alignment, and visual hierarchy
-
----
 
 ### 🔹 Task 3: Calculator Application
 - Developed using **HTML, CSS Grid, and JavaScript**
-- Supports basic arithmetic operations (+, −, ×, ÷)
-- Includes scientific functions
+- Basic arithmetic + scientific operations
 - Dark / Light mode toggle
-- Mobile-friendly with swipe-to-delete feature
-- Inspired UI with original implementation
+- Mobile-friendly UI
 
 ---
 
 ## 🚀 Level 2 – Advanced Web Projects
 
 ### 🔹 Task 1: Online Quiz Maker
+- Built using **HTML, CSS, and JavaScript**
+- Timer-based quiz system
+- Score and percentage calculation
+- Animated and responsive UI
+
+### 🔹 Task 2: Job Board Website
 - Developed using **HTML, CSS, and JavaScript**
-- Interactive multiple-choice quiz application
-- Timer for each question
-- Automatic transition on time-out
-- Score calculation with percentage display
-- Animated background and responsive UI
-- Demonstrates JavaScript logic and DOM manipulation
+- Job listings with search and filter functionality
+- Job details modal and application form
+- Applications stored using `localStorage`
+- View and delete submitted applications
+- Clean UI with animations
 
 ---
-
-### 🔹 Task 2: Job Board Website *(In Progress / Upcoming)*
-- Planned as a real-world job listing platform
-- Will include job listings, search, and filtering functionality
-- Frontend-focused implementation
-- Backend and database integration planned (optional)
 
 ---
 
@@ -72,11 +62,11 @@ All projects are developed with original code and follow CodSoft guidelines.
 ---
 
 ## 📌 Key Learnings
-- Structuring web projects effectively
-- Responsive UI design using CSS
-- JavaScript logic building and event handling
-- DOM manipulation and timers
-- Improving UI/UX with animations and styling
+- Frontend project structuring
+- JavaScript DOM manipulation
+- Form handling and localStorage
+- UI/UX enhancement with CSS animations
+- Building scalable frontend applications
 
 ---
 
