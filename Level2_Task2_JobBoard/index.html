@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="fade-in">
+    <h1>Job Board</h1>
+    <p>Find your next opportunity 🚀</p>
+</header>
+
+<!-- SEARCH & FILTER -->
+<section class="controls slide-up">
+    <input type="text" id="searchInput" placeholder="🔍 Search job title...">
+    <select id="jobTypeFilter">
+        <option value="all">All Jobs</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Internship">Internship</option>
+    </select>
+</section>
+
+<!-- JOB LIST -->
+<section class="jobs" id="jobList"></section>
+
+<!-- APPLICATIONS LIST -->
+<section class="applications">
+    <h2>Submitted Applications</h2>
+    <button class="clear-btn" onclick="clearAllApplications()">🗑 Clear All Applications</button>
+    <div id="applicationsList"></div>
+</section>
+
+<!-- JOB DETAILS MODAL -->
+<div class="modal" id="jobModal">
+    <div class="modal-content scale-in">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalCompany"></p>
+        <p id="modalLocation"></p>
+        <p id="modalType"></p>
+        <p id="modalDescription"></p>
+        <button class="apply-btn" onclick="openApplyForm()">Apply Now</button>
+    </div>
+</div>
+
+<!-- APPLY FORM MODAL -->
+<div class="modal" id="applyModal">
+    <div class="modal-content scale-in">
+        <span class="close" onclick="closeApplyForm()">&times;</span>
+        <h2>Apply for Job</h2>
+
+        <form id="applyForm">
+            <input type="text" id="applicantName" placeholder="Full Name" required>
+            <input type="email" id="applicantEmail" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="file" required>
+            <textarea rows="4" placeholder="Why should we hire you?"></textarea>
+
+            <button type="submit" class="apply-btn">Submit Application</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
